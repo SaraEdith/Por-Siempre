@@ -11,3 +11,7 @@ html, body {
 .fill { 
     min-height: 100%;
 }
+.formulario{
+	max-width: 600px;
+	margin: 0 auto;
+}
