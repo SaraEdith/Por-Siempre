@@ -15,3 +15,29 @@ html, body {
 	max-width: 600px;
 	margin: 0 auto;
 }
+.resultado{
+
+}
+.resultado .ico{
+	position: relative;
+	padding: 7px;
+	margin: 0 auto;
+	top: 5px;
+}
+.resultado .ico.pdf{
+	background: url('img/icon_pdf-02.svg');
+	background-repeat: no-repeat;
+}
+.resultado .ico.xls{
+	background: url('img/icon_xls-03.svg');
+	background-repeat: no-repeat;
+}
+.comprobanteseccion{
+	padding-top: 10px;
+	padding-bottom: 10px;	
+}
+.comprobanteseccion:nth-child(odd) { background: #ddd }
+hr.back{
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
