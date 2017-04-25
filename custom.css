@@ -83,3 +83,20 @@ span.titulo{
 	height: 20px;
 }
 /*Fin Header*/
+
+/*Registro*/
+.imagen-registro{
+	background: url('img/img_bg.jpg');
+    height: 120px;
+}
+.imagen-registro h1{
+	color: white;
+	text-align: center;	
+	padding-top: 20px;
+	font-size: 35px;
+}
+.texto-registro{
+	font-size: bold;
+	
+
+}
