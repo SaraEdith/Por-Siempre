@@ -16,7 +16,7 @@ html, body {
 	margin: 0 auto;
 }
 .resultado{
-
+	font-weight: 200;
 }
 .resultado .ico{
 	position: relative;
@@ -36,8 +36,24 @@ html, body {
 	padding-top: 10px;
 	padding-bottom: 10px;	
 }
-.comprobanteseccion:nth-child(odd) { background: #ddd }
+.comprobanteseccion:nth-child(odd) { background: #f9f9f9; }
 hr.back{
 	margin-top: 5px;
 	margin-bottom: 5px;
+	border-top: 1px solid #f4f4f4;
+}
+span.titulo{
+	font-weight: 600;
+}
+.atras{
+	padding-bottom: 25px;
+}
+.atras a{
+	color: #009ee5;
+}
+.linehead{
+	margin:0px;
+	margin-bottom: 25px;
+	border: 0;
+	border-top: 3px solid #094fa4;;
 }
