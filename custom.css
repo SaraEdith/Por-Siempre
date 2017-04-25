@@ -15,3 +15,37 @@ html, body {
 	max-width: 600px;
 	margin: 0 auto;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Inicio Header*/
+.imagen-header img{
+	height: 80px;
+	padding: 0px;
+}
+.space-header{
+	height: 20px;
+	width: 100%;
+}
+.space-header ul img{
+	padding: 19px;
+	height: 20px;
+}
+
+
+
+
+/*Fin Header*/
