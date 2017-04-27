@@ -20,6 +20,27 @@ html, body {
 .fill { 
     min-height: 100%;
 }
+.backlogin{
+	width: 100%;
+    background: url('img/img_bg.jpg');
+    background-size: cover;
+    background-position: center center;
+	min-height: 100%;
+	height: 100%;    
+}
+
+.backlogin .space{
+	height: 70px;
+}
+.backlogin a,.backlogin label,h1{
+	color: #ffffff;
+}
+.backlogin input{
+	border-radius: 0px 0px 0px 0px;
+	-moz-border-radius: 0px 0px 0px 0px;
+	-webkit-border-radius: 0px 0px 0px 0px;
+	border: 0px solid #ff00ff;
+}
 .formulario{
 	max-width: 600px;
 	margin: 0 auto;
@@ -67,6 +88,17 @@ span.titulo{
 	border-top: 3px solid #094fa4;
 }
 
+.naranja,.naranja:hover,.naranja:active,.naranja:focus{
+	background: #f6891e;
+	background-color: #f6891e;
+	border-radius: 0px 0px 0px 0px;
+	-moz-border-radius: 0px 0px 0px 0px;
+	-webkit-border-radius: 0px 0px 0px 0px;
+	border: 0px solid #ff00ff;
+	padding-left: 30px;
+	padding-right: 30px;
+}
+
 
 
 /*Inicio Header*/
@@ -86,6 +118,7 @@ span.titulo{
 
 /*Registro*/
 .imagen-registro{
+	border-top: solid 1px #094fa4;
 	background: url('img/img_bg.jpg');
     height: 120px;
 }
