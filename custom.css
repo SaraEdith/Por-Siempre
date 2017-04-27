@@ -88,7 +88,9 @@ span.titulo{
 	border: 0;
 	border-top: 3px solid #094fa4;
 }
-
+.space-form{
+	height: 10px;
+}
 .naranja,.naranja:hover,.naranja:active,.naranja:focus{
 	background: #f6891e;
 	background-color: #f6891e;
@@ -100,7 +102,9 @@ span.titulo{
 	padding-right: 30px;
 }
 
-
+.resultados h1{
+	color: #1a1a1a;
+}
 
 /*Inicio Header*/
 .imagen-header img{
@@ -216,7 +220,6 @@ label:hover:before {
     width: 188px;	
 }
 .form-control {
-    width: 90%;
     height: 35px;
     padding: 12px 14px;
     font-size: 13px;
