@@ -105,15 +105,7 @@ span.titulo{
     background-color: #f6891e;
     border-color: #f6891e;
 }
-.col-md-6 {
-    width: 25%;
-}
-.col-md-3 {
-    width: 32%;
-}
-.col-md-12 {
-    width: 85%;
-}
+
 
 
 /* checkbox aspect */
@@ -206,4 +198,12 @@ label:hover:before {
 	text-align: center;
 	font-size: 30px;
 	font-weight: bold;
+}
+.mov{
+	left: -68px;
+	
+}
+.mov1{
+	    left: -35px;
+	    
 }
