@@ -16,6 +16,11 @@
 			<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
 			<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
 		<![endif]-->
+		<link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+ 		<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  		<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  		
+  		
 </head>
 <body>
 	<div class="container hidden-sm hidden-xs">
@@ -75,13 +80,17 @@
 					<label class="form-group control-label text-right">Del:</label>
 				</div>
 				<div class="col-md-3">
-					<input type="date" class="form-control">
+				<div  data-provide="datepicker">
+				 	<input type="text" id="datepicker" class="form-control">
+				</div>
 				</div>
 				<div class="col-md-1 mov1">
 					<label 	class="control-label text-right">A:</label>
 				</div>
 				<div class="col-md-3 mov">
-					<input type="date" class="form-control">
+					<div  data-provide="datepicker">
+				 		<input type="text" id="datepicker2" class="form-control">
+					</div>
 				</div>
 		</div>
 		<div class="space-form"></div>
@@ -109,7 +118,11 @@
 		</div>
 		</form>
   		</div>
-
+		<script>
+  			$( function() {
+    			$( "#datepicker,#datepicker2" ).datepicker() ;
+  			} );
+  		</script>
 
 
 			
