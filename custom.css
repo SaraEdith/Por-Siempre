@@ -17,6 +17,7 @@ html, body {
     height: 20px;
     width: 100%;
 }
+
 .backlogin{
 	width: 100%;
     background: url('img/img_bg.jpg');
@@ -88,8 +89,8 @@ span.titulo{
 	border: 0;
 	border-top: 3px solid #094fa4;
 }
-.space-form{
-	height: 10px;
+.space-form {
+	height: 15px;
 }
 .naranja,.naranja:hover,.naranja:active,.naranja:focus{
 	background: #f6891e;
@@ -212,8 +213,8 @@ label:hover:before {
     width: 188px;	
 }
 .form-control {
-    height: 35px;
-    padding: 12px 14px;
+    height: 40px;
+    padding: 9px 14px;
     font-size: 13px;
     color: #555;
     background-color: #f4f4f4;
@@ -222,6 +223,7 @@ label:hover:before {
     border-radius: 0px;
     -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
     }
+   
  
  /*REALIZAR BUSQUEDA*/
 .realizar-busqueda{
@@ -230,10 +232,32 @@ label:hover:before {
 	font-weight: bold;
 }
 .mov{
-	left: -68px;
+	left: -53px;
 	
 }
 .mov1{
-	    left: -35px;
-	    
+	left: -22px;
+	padding-top: 7px;   
+}
+.divicion {
+	border-top: solid 3px #094fa4;
+}
+.texto h1{
+	color: #040404;
+	text-align: center;
+	font-weight: bold;
+	font-size: 30px;
+	margin-top: 50px;
+}
+.form-control option{
+	text-align: center;
+}
+#busqueda .btn-primary{
+	border-radius: 0px;
+    padding: 8px 45px;
+    margin: 0px;
+    margin-right: 120px;
+}
+#formsize .formulario{
+	margin: 40px 115px;
 }
