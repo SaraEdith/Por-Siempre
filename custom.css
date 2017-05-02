@@ -98,10 +98,18 @@ span.titulo{
 	border-radius: 0px 0px 0px 0px;
 	-moz-border-radius: 0px 0px 0px 0px;
 	-webkit-border-radius: 0px 0px 0px 0px;
-	border: 0px solid #ff00ff;
+	border: 0px solid #fff;
 	padding-left: 30px;
 	padding-right: 30px;
 }
+#entrar .btn-primary{
+	border-radius: 0px;
+    padding: 8px 45px;
+    margin: 0px;
+    margin-right: 44px;
+    border: solid 0px #fff;
+}
+
 
 .resultados h1{
 	color: #1a1a1a;
@@ -145,66 +153,25 @@ span.titulo{
     background-color: #f6891e;
     border-color: #f6891e;
 }
-
-
-
-/* checkbox aspect */
-[type="checkbox"]:not(:checked) + label,
-[type="checkbox"]:checked + label{
-  content: '';
-  position: absolute;
-  left: 0; top: 0;
-  width: 1.25em; height: 1.25em;
-  border: 2px solid #f6891e;
-  background: #fff;
-  border-radius: 0px;
-  box-shadow: inset 0 1px 3px rgba(0,0,0,.1);
+.condiciones{
+	padding-left: 37px;
+	font-size: 15px;
 }
-/* checked mark aspect */
-[type="checkbox"]:not(:checked) + label:after,
-[type="checkbox"]:checked + label:after {
-  content: '✔';
-  position: absolute;
-  top: .1em; left: .3em;
-  font-size: 1.3em;
-  line-height: 0.8;
-  color: #09ad7e;
-  transition: all .2s;
-}
-/* checked mark aspect changes */
-[type="checkbox"]:not(:checked) + label:after {
-  opacity: 0;
-  transform: scale(0);
-}
-[type="checkbox"]:checked + label:after {
-  opacity: 1;
-  transform: scale(1);
-}
-/* disabled checkbox */
-[type="checkbox"]:disabled:not(:checked) + label:before,
-[type="checkbox"]:disabled:checked + label:before {
-  box-shadow: none;
-  border-color: #bbb;
-  background-color: #ddd;
-}
-[type="checkbox"]:disabled:checked + label:after {
-  color: #999;
-}
-[type="checkbox"]:disabled + label {
-  color: #aaa;
-}
-/* accessibility */
-[type="checkbox"]:checked:focus + label:before,
-[type="checkbox"]:not(:checked):focus + label:before {
-  border: 2px dotted blue;
-}
-
-/* hover style just for information */
-label:hover:before {
-  border: 2px solid #4778d9!important;
+#condiciones{
+	color:#009ee5;
 }
 
 
+/*checkbox*/
+input[type=checkbox] {
+    margin: 4px 211px 0;
+    margin-top: 1px\9;
+    line-height: normal;
+    /*-webkit-appearance: none;*/
+    height: 25px;
+    width: 25px;
+    background: #f4f4f4;
+}
 
 
 .form-group p span{
@@ -265,6 +232,14 @@ label:hover:before {
 	background: #f6891e;
 
 }
+#entraraceptar .btn-primary, #busqueda .btn-primary:active,#busqueda .btn-primary:focus{
+	background-color: #f6891e;
+	background: #f6891e;
+	border-radius: 0px;
+	border: solid 0px #fff;
+}
+
+
 #formsize .formulario{
 	margin: 40px 115px;
 }
