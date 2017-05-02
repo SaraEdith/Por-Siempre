@@ -137,6 +137,7 @@ span.titulo{
 .texto-registro{
 	font-weight: bold;
 	font-size: 16px;
+	color: black;
 }
 
 .btn-primary {
