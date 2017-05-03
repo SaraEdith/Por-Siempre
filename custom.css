@@ -13,6 +13,9 @@ html, body {
     height: 100%;
 }
 
+.gris{
+	color: #808080;
+}
 .space-header {
     height: 20px;
     width: 100%;
@@ -205,12 +208,6 @@ input[type="checkbox"]:checked + label:before {
   	color: #333;
   	line-height: 1.5;
 }
-
-
-
-
-
-
 .form-group p span{
 	float: left;
     line-height: 13px;
