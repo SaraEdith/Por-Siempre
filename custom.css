@@ -238,9 +238,13 @@ input[type="checkbox"]:checked + label:before {
 	
 }
 .mov1{
-	left: -22px;
-	padding-top: 7px;   
-}
+	left: -30px;
+	padding-top: 7px;  
+	}
+	.mov2{
+	left: -30px;
+	padding-top: 7px;  
+	}
 .divicion {
 	border-top: solid 3px #094fa4;
 }
@@ -277,3 +281,9 @@ input[type="checkbox"]:checked + label:before {
 #formsize .formulario{
 	margin: 40px 115px;
 }
+
+#xs{
+	padding-left: 0px;
+	margin-left: 45px;
+}
+

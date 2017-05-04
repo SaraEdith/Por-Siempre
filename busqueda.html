@@ -39,13 +39,21 @@
 		</div>
 	</div>
 		
-		<div class="container" id="formsize">
+		<div class="container fill">
 			
 		<form class="formulario" action="" method="POST" role="form">
 		<div class="row">
-			<div class="col-md-4 form-group text-right">
-				<label><span>Buscar por:</span></label>
-			</div>
+
+				<div class="col-sm-4 text-right hidden-xs hidden-sm">
+					<label for="" class="control-label">Buscar por:</label>
+				</div>
+				<div class="col-md-1 col-sm-12 text-left visible-sm">
+					<label for="" class="control-label">Buscar por:</label>
+				</div>
+				<div class="col-sm-4 text-left visible-xs">
+					<label for="" class="control-label">Buscar por:</label>
+				</div>	
+
 			<div class="col-md-6">
 				<select class="form-control">
   					<option>1</option>
@@ -57,47 +65,79 @@
 			</div>
 		</div>
 		<div class="space-form"></div>
-		<div class="row">
-			<div class="col-md-4 form-group text-right">
-				<label><span>*Ingrese el RFC:</span></label>
-    		</div>
+			<div class="row">
+				<div class="col-sm-4 text-right hidden-xs hidden-sm">
+					<label for="" class="control-label">* Ingrese el RFC:</label>
+				</div>
+				<div class="col-md-1 col-sm-12 text-left visible-sm">
+					<label for="" class="control-label">* Ingrese el RFC:</label>
+				</div>
+				<div class="col-sm-4 text-left visible-xs">
+					<label for="" class="control-label">* Ingrese el RFC:</label>
+				</div>	
 			<div class="col-md-6 ">
 				<input type="text" class="form-control" placeholder="Rfc">
 			</div>
 		</div>
 		<div class="space-form"></div>
 		<div class="row">
-			<div class="col-md-4 form-group text-right">
-				<label><span>*Ingrese la Póliza:</span></label>
-    		</div>
+			<div class="col-sm-4 text-right hidden-xs hidden-sm">
+					<label for="" class="control-label">* Ingrese la póliza:</label>
+				</div>
+				<div class="col-md-1 col-sm-12 text-left visible-sm">
+					<label for="" class="control-label">* Ingrese la póliza:</label>
+				</div>
+				<div class="col-sm-4 text-left visible-xs">
+					<label for="" class="control-label">* Ingrese la póliza:</label>
+				</div>	
 			<div class="col-md-6 ">
 				<input type="text" class="form-control" placeholder="Póliza">
 			</div>
 		</div>
 		<div class="space-form"></div>
 		<div class="row">
-				<div class="col-md-4 text-right">
-					<label class="form-group control-label text-right">Del:</label>
+				<div class="col-sm-4  text-right hidden-xs hidden-sm">
+					<label for="" class="control-label">Del:</label>
 				</div>
-				<div class="col-md-3">
+				<div class="col-md-1 col-sm-12 text-left visible-sm">
+					<label for="" class="control-label">Del:</label>
+				</div>
+				<div class="col-sm-4 text-left visible-xs">
+					<label for="" class="control-label">Del:</label>
+				</div>
+				<div class="col-md-3 col-sm-12">
 				<div  data-provide="datepicker">
 				 	<input type="text" id="datepicker" class="form-control" placeholder="Inicio">
 				</div>
 				</div>
-				<div class="col-md-1 mov1">
-					<label 	class="control-label text-right">A:</label>
+				<div class="calendario">
+				<div class="col-md-1 col-sm-12 mov1 text-right hidden-xs hidden-sm">
+					<label for="" class="control-label">A:</label>
 				</div>
-				<div class="col-md-3 mov">
-					<div  data-provide="datepicker">
+				<div class="col-md-1 col-sm-12 text-left visible-sm">
+					<label for="" class="control-label">A:</label>
+				</div>
+				<div class="col-md-1 col-sm-12 mov2 text-left visible-xs">
+					<label for="" class="control-label">A:</label>
+				</div>
+				<div class="col-md-3 col-sm-12 mov">
+					<div data-provide="datepicker">
 				 		<input type="text" id="datepicker2" class="form-control" placeholder="Termino">
 					</div>
+				</div>
 				</div>
 		</div>
 		<div class="space-form"></div>
 		<div class="row">
-			<div class="col-md-4 form-group text-right">
-				<label><span>Documento:</span></label>
-    		</div>
+			<div class="col-sm-4 text-right hidden-xs hidden-sm">
+					<label for="" class="control-label">Documento:</label>
+				</div>
+				<div class="col-md-1 col-sm-12 text-left visible-sm">
+					<label for="" class="control-label">Documento:</label>
+				</div>
+				<div class="col-sm-4 text-left visible-xs">
+					<label for="" class="control-label">Documento:</label>
+				</div>
 			<div class="col-md-6">
 				<select class="form-control">
 					<option>1</option>
@@ -122,6 +162,34 @@
   			$( function() {
     			$( "#datepicker,#datepicker2" ).datepicker() ;
   			} );
+
+
+ 				function pantalla(){
+  					pant =$(window).width();
+  					if(pant <= 989 ){
+  						$('.mov').css("left",0);
+  						$('.mov2').css("left",0);
+  						console.log("la pantalla es pequeña")
+  					}
+  					else if(pant >= 760){
+  						$('.mov').css("left",-53);
+  						$('.mov2').css("left",-30);
+  						console.log("la pantalla es grande")
+  					}
+
+   				}
+  			$(document).on("ready", function(){
+
+  				pantalla();
+
+
+
+  				$(window).resize(
+  					function(){
+  						pantalla();
+  				})
+
+  			})
   		</script>
 
 
